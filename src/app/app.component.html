@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Http Assignment
+  </h1>
+  <table class="tablestyles">
+    <thead>
+    <td>Product Name</td>
+    <td>Category</td>
+    <td>Price</td>
+    <td>Quantity</td>
+    </thead>
+   <tr  *ngFor = "let eachitem of productList">
+     <td>{{eachitem.productname}}</td>
+     <td>{{eachitem.category}}</td>
+     <td>{{eachitem.price}}</td>
+     <td>{{eachitem.quantity}}</td>
+     <td><button (click) = "deleteProduct(eachitem.id)">Delete</button></td>
+     <td>
+      <button (click) = "isEdit = true;selectedItem = eachitem">Edit</button>
+     </td>
+    </tr> 
+  </table>
+
+  <button (click) = "isAdd = true;">Add Product</button>
+  <product-edit-new [productValues] = "selectedItem" *ngIf="isEdit" [action] = 1 ></product-edit-new>
+  <product-edit-new [productValues] = "" *ngIf="isAdd" [action] = 2></product-edit-new>
+
+  </div>
+  
+

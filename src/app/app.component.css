@@ -1,0 +1,13 @@
+.listStyle{
+    padding: 5px;
+    border-bottom: 1px solid #666666;
+}
+.tablestyles{
+    width: -webkit-fill-available;
+    margin-bottom: 12px;
+    background: antiquewhite;
+}
+thead {
+    font-weight: bold;
+    font-size: 16px;
+}

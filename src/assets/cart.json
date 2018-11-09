@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "productname": "Samsung S5",
+      "category": "Phones",
+      "price": 19000,
+      "quantity": 1
+    },
+    {
+      "productname": "Iphone 10",
+      "category": "Phones",
+      "price": 70000,
+      "quantity": 1,
+      "id": 3
+    },
+    {
+      "productname": "vivo",
+      "category": "Phones",
+      "price": 60000,
+      "quantity": 2,
+      "id": 0.5310767783089723
+    },
+    {
+      "productname": "Iphone 6s",
+      "category": "Phones",
+      "price": 40000,
+      "quantity": 5,
+      "id": 0.1151405534990495
+    },
+    {
+      "productname": "Phillips Mixer",
+      "category": "Home Appliances",
+      "price": 2000,
+      "quantity": 1,
+      "id": 0.7540085470867262
+    }
+  ]
+}

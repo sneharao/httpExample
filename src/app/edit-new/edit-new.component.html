@@ -1,0 +1,21 @@
+<div class="formcontainer">
+<form [formGroup]="productForm" (ngSubmit) = "retrieveProductDetails(productForm.value)">
+  <label>
+    Product Name:
+    <input type="text" formControlName ="productname" required/>
+  </label>
+  <label>
+    Category:
+    <input type="text" formControlName ="category" maxlength="20" />
+  </label>
+  <label>
+    Price:
+    <input type="number" formControlName = "price" required min="100" />
+  </label>
+  <label>
+    Quantity:
+    <input type="number" formControlName = "quantity" required min="1" max="10" />
+  </label>
+  <button type="submit" [disabled]="!productForm.valid">Submit</button>
+</form>
+</div>
